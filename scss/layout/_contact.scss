@@ -1,0 +1,94 @@
+.contact{
+  margin-bottom: 109px;
+  .container{
+    .contact__wrapper{
+      padding-top: 48px;
+      border-top: 1px solid rgba(51, 50, 61, 0.15);
+      display: flex;
+      justify-content: space-between;
+
+      &-left{
+        &-title{
+          @include text-size(350px, 40px, 42px, $main-color-GrayishDarkBlue, 'Ibarra Real Nova', 700);
+          margin: 0;
+        }
+      }
+
+      &-right{
+        width: 635px;
+        
+        form{
+          position: relative;
+          label{
+            margin-bottom: 20px;
+            display: inline-block;
+            
+      
+            span{
+              display: block;
+              margin-bottom: 8px;
+              @include text-size(auto, 13px, 30px, $main-color-GrayishDarkBlue, 'Public Sans', 700);
+            }
+      
+            input{
+              width: 635px;
+              height: 48px;
+              background-color: #e6e6e7;
+              font-size: 13px;
+              line-height: 30px;
+              border: none;
+              padding: 9px 0;
+              padding-left: 16px;
+
+              &:focus{
+                outline: 1px solid $main-color-cyan;
+                border: none;
+  
+                &::placeholder{
+                  color: $main-color-GrayishDarkBlue;
+                }
+                }
+            }
+
+            #message{
+              width: 635px;
+              overflow: hidden;
+              height: 96px;
+              margin-bottom: 24px;
+              padding-top: 9px;
+              padding-left: 16px;
+              font-size: 13px;
+              line-height: 30px;
+              background-color: #e6e6e7;
+              border: none;
+
+              &:focus{
+              outline: 1px solid $main-color-cyan;
+              border: none;
+
+              &::placeholder{
+                color: $main-color-GrayishDarkBlue;
+              }
+              }
+            }
+          }
+
+          .btn{
+            background-color: $main-color-DarkBlue;
+            width: 250px;
+            height: 48px;
+            @include text-size(182px, 12px, 14px, #fff, 'Public sans', 400);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border: none;
+            padding: 17px 24px;
+
+            &:hover{
+               background-color: $main-color-cyan;
+            }
+          }
+        }
+      }
+    }
+  }
+}

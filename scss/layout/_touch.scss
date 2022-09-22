@@ -1,0 +1,57 @@
+.touch{
+  margin-bottom: 48px;
+  .container{
+    .touch__wrapper{
+      padding-top: 48px;
+      border-top: 1px solid rgba(51, 50, 61, 0.15);
+      display: flex;
+      justify-content: space-between;
+
+      &__left{
+        &-title{
+          @include text-size(350px, 40px, 42px, $main-color-GrayishDarkBlue, 'Ibarra Real Nova', 700);
+          margin: 0;
+        }
+      }
+
+      &__right{
+        width: 635px;
+
+        &-text{
+          @include text-size(635px, 16px, 30px, $main-color-GrayishDarkBlue, 'Public Sans', 400);
+          margin-bottom: 24px;
+        }
+
+        &__list{
+          width: 104px;
+          list-style-type: none;
+          display: flex;
+          justify-content: space-between;
+          margin: 0;
+          padding: 0;
+        
+          &__item{
+            position: relative;
+
+            .icon{
+              position: relative;
+              svg{
+                position: relative;
+                font-size: 24px;
+                fill: $main-color-GrayishDarkBlue;
+              }
+
+              &:hover{
+                svg{
+                  fill: #33323d6f;
+                  bottom: -2px;
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
